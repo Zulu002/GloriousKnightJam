@@ -1,105 +1,233 @@
-<DOCTYPE HTML>
-  <html>
-      <head>
-          <meta charset="UTF-8">
-          <meta name="keywords" content="соревнование, создание игр">
-          <meta name="description" content="Что такое gamejam">
-          <title>Что такое gamejam</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-          <link rel="stylesheet" href="gamejam_style3.css">
-      <head>
-      <body>
-          <header class="d-flex justify-content-center py-3">
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link"><span class="colortext02">Главная</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><span class="colortext01_01">О Glorious Knight Jam</span></a></li>
-                <li class="nav-item"><a href="gamejam2.html" class="nav-link"><span class="colortext02">Запись</span></a></li>
-                <li class="nav-item"><a href="index.html#about" class="nav-link"><span class="colortext02">О нас</span></a></li>
-              </ul>
-          </header>
-          <div class="hero">
-              <div class="hero-media">
-                  <img src='images/firedd.gif' class="firestyle" alt="Glorious Knight Jam огонь">
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="keywords" content="Glorious Knight Jam, game jam, геймджем, правила, критерии, сроки" />
+    <meta
+      name="description"
+      content="Glorious Knight Jam: сроки, команда, правила, критерии оценки и киллер-фича."
+    />
+
+    <link rel="icon" href="favicon.ico" />
+    <title>Glorious Knight Jam — о джеме</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="gamejam_style3.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Glorious Knight Jam — главная">
+          <span class="brand-mark" aria-hidden="true">GK</span>
+          <span class="brand-text">Glorious Knight Jam</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="index.html">Главная</a>
+          <a class="nav-link is-active" href="#" aria-current="page">О Glorious Knight Jam</a>
+          <a class="nav-link nav-cta" href="gamejam2.html">Запись</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">О Glorious Knight Jam</h1>
+            <p class="hero-subtitle">
+              Формат, правила и критерии — всё, что нужно, чтобы быстро понять, как участвовать и что важно при оценке.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="gamejam2.html">Перейти к записи</a>
+              <a class="button button-ghost" href="#rules">Правила</a>
+              <a class="button button-ghost" href="#criteria">Критерии</a>
+            </div>
+
+            <div class="hero-mini">
+              <div class="mini-item">
+                <div class="mini-label">Длительность</div>
+                <div class="mini-value">7 дней</div>
               </div>
-              <div class="hero-content">
-                  <h1 class="page-title">Glorious Knight Jam</h1>
-                  <p class="subtitle">Главные правила и структура джема, чтобы команда успела создать сильный проект.</p>
-                  <div class="cta-wrapper">
-                      <a href="gamejam2.html" class="cta-button">Перейти к записи</a>
-                  </div>
+              <div class="mini-item">
+                <div class="mini-label">Команда</div>
+                <div class="mini-value">до 4 человек</div>
               </div>
-          </div>
-          <div class="hero-banner">
-              <img src='images/poster for publication.png' class="ggf" alt="Постер Glorious Knight Jam">
+              <div class="mini-item">
+                <div class="mini-label">Движок</div>
+                <div class="mini-value">любой</div>
+              </div>
+            </div>
           </div>
 
-         <div class="text01">
-              <h3>Главные столпы Glorious Knight Jam</h3>
-              <div class="info-grid">
-                  <div class="info-card">
-                      <h4>Сроки и команда</h4>
-                      <p class="colortext01">
-                          Мы увеличили длительность с 3 до 7 дней, чтобы работа шла без спешки. В команде может быть максимум 4 человека.
-                      </p>
-                  </div>
-                  <div class="info-card">
-                      <h4>Инструменты</h4>
-                      <p class="colortext01">
-                          Для создания проекта можно использовать любой игровой движок, который вы знаете.
-                      </p>
-                  </div>
-                  <div class="info-card">
-                      <h4>Критерии и киллер-фича</h4>
-                      <p class="colortext01">
-                          Мы выдадим карточку с критериями, а затем — киллер-фичу. Она не обязательна, но её наличие даёт дополнительные баллы.
-                      </p>
-                  </div>
+          <div class="hero-media">
+            <div class="poster-frame">
+              <img src="images/poster for publication.png" alt="Постер Glorious Knight Jam" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pillars -->
+      <section class="section">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-title">Главные столпы</h2>
+            <p class="section-lead">
+              Три идеи, на которых держится формат: время, свобода инструментов и понятная система оценки.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3 class="card-title">Сроки и команда</h3>
+              <p class="card-text">
+                Мы увеличили длительность с 3 до 7 дней, чтобы работа шла без постоянной спешки.
+                В команде может быть максимум <b>4 человека</b>.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Инструменты</h3>
+              <p class="card-text">
+                Для создания проекта можно использовать <b>любой игровой движок</b>, который вы знаете.
+                Важнее результат и понятная идея, чем “самый модный стек”.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Критерии и киллер-фича</h3>
+              <p class="card-text">
+                Участники получают критерии, а затем — <b>киллер-фичу</b>. Она не обязательна,
+                но её наличие даёт дополнительные баллы.
+              </p>
+            </article>
+          </div>
+
+          <div class="callout">
+            <p class="callout-text">
+              Небольшая, но законченная игра почти всегда выигрывает у большой, но недоделанной.
+              Планируй объём — и доводи до финала.
+            </p>
+            <a class="button button-primary" href="gamejam2.html">Записаться</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Criteria -->
+      <section class="section section-alt" id="criteria">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-title">Критерии оценки</h2>
+            <p class="section-lead">
+              Что будет учитываться при оценке проекта.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3 class="card-title">Чек-лист</h3>
+              <ul class="checklist">
+                <li>Завершённость игры</li>
+                <li>Соответствие критериям</li>
+                <li>Творческий подход к разработке</li>
+                <li>Представленные механики</li>
+                <li>Грамотное представление проекта</li>
+                <li>Наличие киллер-фичи</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Дополнительные баллы</h3>
+              <p class="card-text">
+                Также будут независимые эксперты, которые добавят баллы проектам.
+                Это помогает выделить сильные идеи и аккуратную подачу.
+              </p>
+
+              <div class="note">
+                <div class="note-title">Совет</div>
+                <p class="note-text">
+                  Сделай короткий питч: “о чём игра”, “какая механика”, “как играть”.
+                  Хорошая подача почти всегда прибавляет очков.
+                </p>
               </div>
-              <div class="section-block">
-                  <h4>Критерии оценки</h4>
-                  <ul class="checklist">
-                      <li>Завершённость игры</li>
-                      <li>Соответствие критериям</li>
-                      <li>Творческий подход к разработке</li>
-                      <li>Представленные механики</li>
-                      <li>Грамотное представление проекта</li>
-                      <li>Наличие киллер-фичи</li>
-                  </ul>
-                  <p class="colortext01">Также будут независимые эксперты, которые добавят баллы проектам.</p>
-              </div>
-              <div class="section-block">
-                  <h3>Правила</h3>
-                  <div class="rules-grid">
-                      <div class="rules-card">
-                          <h4>1. Уважение и дружелюбие</h4>
-                          <ul class="checklist">
-                              <li>Соблюдайте уважительное отношение к участникам.</li>
-                              <li>Избегайте споров и конфликтов, обращайтесь к администрации.</li>
-                              <li>Не разглашайте личную информацию других участников.</li>
-                          </ul>
-                      </div>
-                      <div class="rules-card">
-                          <h4>2. Содержание</h4>
-                          <ul class="checklist">
-                              <li>Запрещено размещение контента, нарушающего законы.</li>
-                              <li>Не размещайте спам, рекламу, вирусы или мошенничество.</li>
-                              <li>Материалы для взрослых и порнография запрещены.</li>
-                          </ul>
-                      </div>
-                      <div class="rules-card">
-                          <h4>3. Безопасность</h4>
-                          <ul class="checklist">
-                              <li>Запрещено приглашать ботов без согласия администрации.</li>
-                              <li>Не доверяйте личные данные и пароли никому.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-            <footer>
-              <hr>
-              <h4>By Zulu inc.</h4>
-            </footer>
-        </body>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rules -->
+      <section class="section" id="rules">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-title">Правила</h2>
+            <p class="section-lead">
+              Чтобы джем был комфортным и безопасным для всех участников.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3 class="card-title">1. Уважение и дружелюбие</h3>
+              <ul class="checklist">
+                <li>Соблюдайте уважительное отношение к участникам.</li>
+                <li>Избегайте конфликтов — при необходимости обращайтесь к администрации.</li>
+                <li>Не разглашайте личную информацию других участников.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">2. Содержание</h3>
+              <ul class="checklist">
+                <li>Запрещён контент, нарушающий законы.</li>
+                <li>Не размещайте спам, рекламу, вирусы или мошенничество.</li>
+                <li>Материалы 18+ и порнография запрещены.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">3. Безопасность</h3>
+              <ul class="checklist">
+                <li>Не приглашайте ботов без согласия администрации.</li>
+                <li>Не передавайте личные данные и пароли.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="cta-bottom">
+            <h3 class="cta-title">Готов участвовать?</h3>
+            <p class="cta-text">Вступай в Telegram — там будет регистрация и все детали.</p>
+            <a class="button button-primary button-large" href="gamejam2.html">Перейти к записи</a>
+          </div>
+
+          <div class="back">
+            <a class="back-link" href="index.html">← Вернуться на главную</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">By Zulu inc.</p>
+        <p class="footer-muted">© <span id="year"></span> Glorious Knight Jam</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

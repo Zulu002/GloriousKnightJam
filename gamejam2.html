@@ -1,39 +1,165 @@
-<DOCTYPE HTML>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="keywords" content="соревнование, создание игр">
-            <meta name="description" content="Что такое gamejam">
-            <title>Что такое gamejam</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <link rel="stylesheet" href="gamejam_style2.css">
-        <head>
-        <body>
-            <header class="d-flex justify-content-center py-3">
-                <ul class="nav nav-pills">
-                  <li class="nav-item"><a href="index.html" class="nav-link"><span class="colortext02">Главная</span></a></li>
-                  <li class="nav-item"><a href="gamejam4.html" class="nav-link"><span class="colortext02">О Glorious Knight Jam</span></a></li>
-                  <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><span class="colortext01_01">Запись</span></a></li>
-                  <li class="nav-item"><a href="index.html#about" class="nav-link"><span class="colortext02">О нас</span></a></li>
-                </ul>
-            </header>
-            
-            <div class="text02">
-                <h3>Записывайтесь на наш Game jam</h3>
-            
-                <p class="colortext01">Вместе мы будем разрабатывать игры делится опытом и хорошо проводить время.</p>
-                <p class="colortext01">Вступайте в наш телеграмм канал для дальнейшей регистрации</p>
-                <h3>Ждём вас</h3>
-                <div class="gif01">
-                    <a href="https://t.me/+wsI8rFMAGMNkNmYy"><img src='images/qrcode.png' class="ggf"></a>
-                </div>
-                <div class="cta-wrapper">
-                    <a href="https://t.me/+wsI8rFMAGMNkNmYy" class="cta-button">Кликните для перехода по ссылке</a>
-                </div>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="keywords" content="game jam, геймджем, запись, Glorious Knight Jam" />
+    <meta
+      name="description"
+      content="Запись на Glorious Knight Jam: перейдите в Telegram, чтобы зарегистрироваться и получить детали."
+    />
+
+    <link rel="icon" href="favicon.ico" />
+    <title>Glorious Knight Jam — запись</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="gamejam_style2.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Glorious Knight Jam — главная">
+          <span class="brand-mark" aria-hidden="true">GK</span>
+          <span class="brand-text">Glorious Knight Jam</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link" href="index.html">Главная</a>
+          <a class="nav-link" href="gamejam4.html">О Glorious Knight Jam</a>
+          <a class="nav-link is-active" href="#" aria-current="page">Запись</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="section">
+        <div class="container">
+          <div class="hero-card">
+            <div class="hero-left">
+              <h1 class="title">Запись на Glorious Knight Jam</h1>
+              <p class="lead">
+                Вступай в Telegram-канал — там будет регистрация, правила, тема джема и напоминания по дедлайнам.
+              </p>
+
+              <ul class="steps" aria-label="Как записаться">
+                <li><b>Открой</b> ссылку на Telegram</li>
+                <li><b>Вступи</b> в канал</li>
+                <li><b>Заполни</b> форму регистрации (в закрепе)</li>
+              </ul>
+
+              <div class="actions">
+                <a
+                  class="button button-primary"
+                  href="https://t.me/+wsI8rFMAGMNkNmYy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Перейти в Telegram
+                </a>
+
+                <button class="button button-ghost" type="button" id="copyBtn" aria-label="Скопировать ссылку">
+                  Скопировать ссылку
+                </button>
+              </div>
+
+              <div class="linkbox" aria-label="Ссылка на Telegram">
+                <span class="linkbox-label">Ссылка:</span>
+                <code class="linkbox-code" id="tgLink">https://t.me/+wsI8rFMAGMNkNmYy</code>
+              </div>
+
+              <p class="hint">
+                Если Telegram не открывается: скопируй ссылку и вставь в браузер или в приложение Telegram вручную.
+              </p>
             </div>
-           
-              
-        </body>
+
+            <div class="hero-right">
+              <div class="qr-card">
+                <p class="qr-title">QR-код</p>
+                <a
+                  class="qr-link"
+                  href="https://t.me/+wsI8rFMAGMNkNmYy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Открыть Telegram по QR-коду"
+                >
+                  <img class="qr" src="images/qrcode.png" alt="QR-код для перехода в Telegram" />
+                </a>
+                <p class="qr-note">Можно открыть камерой телефона</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <article class="card">
+              <h2 class="card-title">Что будет в канале</h2>
+              <p class="card-text">
+                Правила, тема и сроки, полезные ссылки, подборки ассетов и ответы на вопросы. Всё в одном месте.
+              </p>
+            </article>
+
+            <article class="card">
+              <h2 class="card-title">Кому подойдёт</h2>
+              <p class="card-text">
+                Новичкам — чтобы попробовать полный цикл. Опытным — чтобы быстро собрать прототип и протестить идею.
+              </p>
+            </article>
+          </div>
+
+          <div class="back">
+            <a class="back-link" href="index.html">← Вернуться на главную</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">By Zulu inc.</p>
+        <p class="footer-muted">© <span id="year"></span> Glorious Knight Jam</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const copyBtn = document.getElementById("copyBtn");
+      const tgLink = document.getElementById("tgLink").textContent.trim();
+
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(tgLink);
+          copyBtn.textContent = "Скопировано!";
+          copyBtn.classList.add("is-success");
+          setTimeout(() => {
+            copyBtn.textContent = "Скопировать ссылку";
+            copyBtn.classList.remove("is-success");
+          }, 1400);
+        } catch (e) {
+          // запасной вариант (старые браузеры)
+          const tmp = document.createElement("textarea");
+          tmp.value = tgLink;
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand("copy");
+          document.body.removeChild(tmp);
+
+          copyBtn.textContent = "Скопировано!";
+          copyBtn.classList.add("is-success");
+          setTimeout(() => {
+            copyBtn.textContent = "Скопировать ссылку";
+            copyBtn.classList.remove("is-success");
+          }, 1400);
+        }
+      });
+    </script>
+  </body>
+</html>

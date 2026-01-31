@@ -1,113 +1,269 @@
-<DOCTYPE HTML>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="keywords" content="соревнование, создание игр">
-            <meta name="description" content="Что такое gamejam">
-            <link type="images/x-icon" rel="shortcut icon" href="favicon.ico">
-            <title>Что такое gamejam</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <link rel="stylesheet" href="gamejam_style.css">
-        <head>
-        <body>
-            <header class="d-flex justify-content-center py-3">
-                <ul class="nav nav-pills">
-                  <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><span class="colortext01_01">Главная</span></a></li>
-                  <li class="nav-item"><a href="gamejam4.html" class="nav-link"><span class="colortext02">О Glorious Knight Jam</span></a></li>
-                  <li class="nav-item"><a href="gamejam2.html" class="nav-link"><span class="colortext02">Запись</span></a></li>
-                  <li class="nav-item"><a href="#about" class="nav-link"><span class="colortext02">О нас</span></a></li>
-                </ul>
-            </header>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            <div class="page-title"> 
-              <h1 class="main-title">Glorious Knight Jam</h1>
-              <p class="subtitle">Соревнование по созданию игр, где важны скорость и вдохновение.</p>
+    <meta name="keywords" content="game jam, геймджем, соревнование, создание игр" />
+    <meta name="description" content="Glorious Knight Jam — геймджем: что это такое, как участвовать и чем делать игры." />
+
+    <link rel="icon" href="favicon.ico" />
+    <title>Glorious Knight Jam — что такое game jam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="gamejam_style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Glorious Knight Jam — главная">
+          <span class="brand-mark" aria-hidden="true">GK</span>
+          <span class="brand-text">Glorious Knight Jam</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link is-active" href="#" aria-current="page">Главная</a>
+          <a class="nav-link" href="gamejam4.html">О Glorious Knight Jam</a>
+          <a class="nav-link nav-cta" href="gamejam2.html">Запись</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">Glorious Knight Jam</h1>
+            <p class="hero-subtitle">
+              Соревнование по созданию игр, где важны скорость, фокус и вдохновение.
+              Собери законченную игру за ограниченное время и покажи её миру.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="gamejam2.html">Перейти на запись</a>
+              <a class="button button-ghost" href="#about">О нас</a>
             </div>
-            <div class = "gif01"> 
-                <img src='images/gif01.gif' class="ggf">
+
+            <ul class="hero-points" aria-label="Коротко о джеме">
+              <li>Формат: прототип → сборка → публикация</li>
+              <li>Подходит новичкам и опытным</li>
+              <li>Главное — довести до результата</li>
+            </ul>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <div class="media-frame">
+              <img class="hero-gif" src="images/gif01.gif" alt="" />
             </div>
-            <div class="text01">
-              <img src='images/fire.gif' class="firestyle">
-              <h3>Понятия «геймджем».</h3>
-              <p class="colortext01">
-                Формальным языком это соревнование по скоростной разработке игр (Game — игра, Jam — 
-                от музыкального понятия jam session, когда музыканты собираются и импровизируют без специальной предварительной подготовки). 
-                Очень похоже на специализированные хакатоны. Явление последние годы набирает все большую популярность в мире. На последнем геймджеме Ludum Dare, 
-                который проходит 3 раза в год, было собрано 2538 работ, а на globalgamejam.org — самом крупном геймджеме — 4289 работ в январе 2014 года.
-                Наиболее часто геймджемы длятся 48 часов, хотя в данном вопросе сроки зависят лишь от организаторов конкретного геймджема.
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Cards -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Что такое game jam</h2>
+          <p class="section-lead">
+            Game jam — это интенсив по разработке игр за короткое время. Как мини-хакатон, только про игры.
+          </p>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="card-head">
+                <h3 class="card-title">Понятие</h3>
+                <img class="card-icon" src="images/fire.gif" alt="" aria-hidden="true" />
+              </div>
+              <p class="card-text">
+                Это соревнование по скоростной разработке игр: <b>Game</b> — игра, <b>Jam</b> — как jam-session
+                в музыке (импровизация без долгой подготовки). Обычно джем длится около <b>48 часов</b>,
+                но формат зависит от организаторов.
               </p>
-              <img src='images/poison.gif' class="poisonstyle">
-              <h3>Инструменты</h3>
-              <p class="colortext01">
-                Инструменты по созданию цифрового контента упрощаются, становятся доступны для более широкого круга лиц. 
-                Появляются удобные редакторы игр: 
-                Unity, Game Maker, Construct 2, не забывая и про старый добрый Flash и т.п. 
-                Соответственно, все большее число людей начинает 
-                участвовать в джемах, и даже тех, кто напрямую не входит в игродельческое сообщество.
+            </article>
+
+            <article class="card">
+              <div class="card-head">
+                <h3 class="card-title">Инструменты</h3>
+                <img class="card-icon" src="images/poison.gif" alt="" aria-hidden="true" />
+              </div>
+              <p class="card-text">
+                Игры можно делать на чём угодно: <b>Unity</b>, <b>Godot</b>, <b>GameMaker</b>, <b>Construct</b>,
+                и даже на веб-стеке. Главное — выбрать знакомый инструмент, чтобы не тратить время на “обучение с нуля”.
               </p>
-              <img src='images/dimond.gif' class="dimondstyle">
-              <h3>Участие</h3>
-              <p class="colortext01">
-                Участие в геймджемах профессионалам индустрии позволяет размять косточки и испытать себя в скоростной разработке игр, 
-                попробовать прототип, на который у них нет времени и мотивации вне геймджема. Но так же и новичкам геймджем дает возможность понять, что такое разработка игр в принципе, освоить инструменты и технологии, ну и, конечно, поймать радость творчества в чистом виде. 
-                Главное задача в геймджеме — успеть собрать что-то законченное, и с этой задачей справляются далеко не все участники.
-                Поэтому основные советы: Геймдизайн должен быть максимально прост, и содержать не более одной киллер-фичи.
-                Неплохой идеей будет сделать упор на сеттинг и атмосферность игры — очень часто голосование и выбор работ осуществляются самими участниками и яркий игровой мир будет оценен по праву.
-                Ни в коем случае нельзя пытаться освоить новые технологии во время геймджема. Если вы собираетесь работать с новым инструментом, лучше его освоить заранее.
-                Звучит банально, но планируйте свое время.
-                И, наконец, отдохните и выспитесь перед состязанием. Ваш организм скажет вам спасибо.
-                </p>
+            </article>
 
-              <h3>Примеры</h3>
-              
-              <div class="slider-container">
-              <div class="slider">
-              <img src="images/hollow-knight.png" alt="hollow-knight">
-              <img src="images/Celeste.png" alt="Celeste">
-              <img src="images/superhot.png" alt="superhot">
-              <img src="images/Inscription.png" alt="Inscription">
-              
+            <article class="card">
+              <div class="card-head">
+                <h3 class="card-title">Участие</h3>
+                <img class="card-icon" src="images/dimond.gif" alt="" aria-hidden="true" />
               </div>
-                <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
-              </div>
-            
-              <div class="about-section" id="about">
-                <h3>О нас</h3>
-                <div class="about-grid">
-                  <div class="about-card">
-                    <h4>Немного о создателе</h4>
-                    <p class="colortext01">
-                      Сайт был сделан для проекта и в дальнейшем хочется ввести его в оборот для реализации Game jam в колледже связи и информатики. Я сам хочу попробовать себя в роли разработчика и ведущего Game jam.
-                    </p>
-                  </div>
-                  <div class="about-card">
-                    <h4>Немного о разработке</h4>
-                    <p class="colortext01">
-                      Для сайта использовались изображении собственной обработки, немного javaScript, bootstrap, html, css.
-                    </p>
-                  </div>
-                </div>
-                <div class="about-media">
-                  <img src='images/portret.png' class="ggf" alt="Портрет автора">
-                </div>
-              </div>
-  
-            <script src="script.js"></script>
-              
-            <h3 class="end">Спасибо за внимание</h3>
+              <p class="card-text">
+                Профи разминаются и пробуют идеи, на которые нет времени. Новички получают опыт полного цикла:
+                идея → прототип → сборка → публикация. Совет: <b>простая механика</b>, <b>одна киллер-фича</b>,
+                и план по времени.
+              </p>
+            </article>
+          </div>
 
-            <div class="cta-wrapper">
-              <a href="gamejam2.html" class="cta-button">Перейти на запись</a>
+          <div class="callout">
+            <p class="callout-text">
+              Хочешь участвовать? Сделай упор на понятный геймплей и атмосферу — так проект выглядит законченно,
+              даже если он небольшой.
+            </p>
+            <a class="button button-primary" href="gamejam2.html">Записаться на джем</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Examples / Slider -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-title">Примеры и вдохновение</h2>
+            <p class="section-lead">
+              В джемах часто рождаются идеи, которые потом превращаются в полноценные игры.
+            </p>
+          </div>
+
+          <div class="slider" aria-label="Слайдер примеров">
+            <div class="slider-viewport">
+              <div class="slider-track" id="sliderTrack">
+                <figure class="slide">
+                  <img src="images/hollow-knight.png" alt="Hollow Knight" />
+                </figure>
+                <figure class="slide">
+                  <img src="images/Celeste.png" alt="Celeste" />
+                </figure>
+                <figure class="slide">
+                  <img src="images/superhot.png" alt="Superhot" />
+                </figure>
+                <figure class="slide">
+                  <img src="images/Inscription.png" alt="Inscription" />
+                </figure>
+              </div>
             </div>
 
-              
-            <div>
-            <footer>
-              <hr>
-              <h4>By Zulu inc.</h4>
-            </footer>
-        </body>
+            <button class="slider-btn slider-btn-prev" type="button" aria-label="Предыдущий слайд" id="prevBtn">
+              ‹
+            </button>
+            <button class="slider-btn slider-btn-next" type="button" aria-label="Следующий слайд" id="nextBtn">
+              ›
+            </button>
+
+            <div class="slider-dots" role="tablist" aria-label="Индикаторы слайдов" id="dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title">О нас</h2>
+          <p class="section-lead">
+            Небольшой проект, который можно развивать и использовать для настоящего джема.
+          </p>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3 class="card-title">Немного о создателе</h3>
+              <p class="card-text">
+                Сайт делался как проект, но дальше хочется запустить реальный Game Jam в колледже связи и информатики.
+                Я хочу попробовать себя в роли организатора и ведущего.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Немного о разработке</h3>
+              <p class="card-text">
+                Использованы собственные изображения/обработка, HTML + CSS, немного JavaScript для интерактива.
+                Цель — сделать понятный лендинг: быстро объяснить формат и привести на запись.
+              </p>
+            </article>
+          </div>
+
+          <div class="cta-bottom">
+            <h3 class="cta-title">Готов присоединиться?</h3>
+            <p class="cta-text">Оставь заявку — и ты получишь все детали участия.</p>
+            <a class="button button-primary button-large" href="gamejam2.html">Перейти на запись</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">By Zulu inc.</p>
+        <p class="footer-muted">© <span id="year"></span> Glorious Knight Jam</p>
+      </div>
+    </footer>
+
+    <script>
+      // Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Slider
+      const track = document.getElementById("sliderTrack");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const dotsWrap = document.getElementById("dots");
+      const slides = Array.from(track.children);
+
+      let index = 0;
+
+      function createDots() {
+        dotsWrap.innerHTML = "";
+        slides.forEach((_, i) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "dot" + (i === 0 ? " is-active" : "");
+          btn.setAttribute("aria-label", `Перейти к слайду ${i + 1}`);
+          btn.addEventListener("click", () => goTo(i));
+          dotsWrap.appendChild(btn);
+        });
+      }
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        const dots = dotsWrap.querySelectorAll(".dot");
+        dots.forEach((d, i) => d.classList.toggle("is-active", i === index));
+      }
+
+      function goTo(i) {
+        index = (i + slides.length) % slides.length;
+        update();
+      }
+
+      prevBtn.addEventListener("click", () => goTo(index - 1));
+      nextBtn.addEventListener("click", () => goTo(index + 1));
+
+      // Swipe (mobile)
+      let startX = 0;
+      let endX = 0;
+
+      track.addEventListener("touchstart", (e) => {
+        startX = e.changedTouches[0].clientX;
+      });
+
+      track.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        const diff = endX - startX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) goTo(index - 1);
+          else goTo(index + 1);
+        }
+      });
+
+      createDots();
+      update();
+    </script>
+  </body>
+</html>
