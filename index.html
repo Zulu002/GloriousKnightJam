@@ -6,6 +6,9 @@
             <meta name="description" content="Что такое gamejam">
             <link type="images/x-icon" rel="shortcut icon" href="favicon.ico">
             <title>Что такое gamejam</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
             <link rel="stylesheet" href="gamejam_style.css">
         <head>
@@ -15,19 +18,18 @@
                   <li class="nav-item"><a href="#" class="nav-link active" aria-current="page"><span class="colortext01_01">Главная</span></a></li>
                   <li class="nav-item"><a href="gamejam4.html" class="nav-link"><span class="colortext02">О Glorious Knight Jam</span></a></li>
                   <li class="nav-item"><a href="gamejam2.html" class="nav-link"><span class="colortext02">Запись</span></a></li>
-                  <li class="nav-item"><a href="gamejam3.html" class="nav-link"><span class="colortext02">О нас</span></a></li>
+                  <li class="nav-item"><a href="#about" class="nav-link"><span class="colortext02">О нас</span></a></li>
                 </ul>
             </header>
 
-            <div> 
-              <img src="images/logo.png" class="photo1">
+            <div class="page-title"> 
+              <h1 class="main-title">Glorious Knight Jam</h1>
+              <p class="subtitle">Соревнование по созданию игр, где важны скорость и вдохновение.</p>
             </div>
             <div class = "gif01"> 
                 <img src='images/gif01.gif' class="ggf">
             </div>
-            <hr>
             <div class="text01">
-              
               <img src='images/fire.gif' class="firestyle">
               <h3>Понятия «геймджем».</h3>
               <p class="colortext01">
@@ -37,7 +39,6 @@
                 который проходит 3 раза в год, было собрано 2538 работ, а на globalgamejam.org — самом крупном геймджеме — 4289 работ в январе 2014 года.
                 Наиболее часто геймджемы длятся 48 часов, хотя в данном вопросе сроки зависят лишь от организаторов конкретного геймджема.
               </p>
-              <hr>
               <img src='images/poison.gif' class="poisonstyle">
               <h3>Инструменты</h3>
               <p class="colortext01">
@@ -47,7 +48,6 @@
                 Соответственно, все большее число людей начинает 
                 участвовать в джемах, и даже тех, кто напрямую не входит в игродельческое сообщество.
               </p>
-              <hr>
               <img src='images/dimond.gif' class="dimondstyle">
               <h3>Участие</h3>
               <p class="colortext01">
@@ -62,7 +62,6 @@
                 </p>
 
               <h3>Примеры</h3>
-              <hr>
               
               <div class="slider-container">
               <div class="slider">
@@ -76,12 +75,34 @@
                 <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
               </div>
             
+              <div class="about-section" id="about">
+                <h3>О нас</h3>
+                <div class="about-grid">
+                  <div class="about-card">
+                    <h4>Немного о создателе</h4>
+                    <p class="colortext01">
+                      Сайт был сделан для проекта и в дальнейшем хочется ввести его в оборот для реализации Game jam в колледже связи и информатики. Я сам хочу попробовать себя в роли разработчика и ведущего Game jam.
+                    </p>
+                  </div>
+                  <div class="about-card">
+                    <h4>Немного о разработке</h4>
+                    <p class="colortext01">
+                      Для сайта использовались изображении собственной обработки, немного javaScript, bootstrap, html, css.
+                    </p>
+                  </div>
+                </div>
+                <div class="about-media">
+                  <img src='images/portret.png' class="ggf" alt="Портрет автора">
+                </div>
+              </div>
   
             <script src="script.js"></script>
               
             <h3 class="end">Спасибо за внимание</h3>
 
-            <a href="gamejam2.html" class="nav-link"><span class="end">Перейти на запись</span></a>
+            <div class="cta-wrapper">
+              <a href="gamejam2.html" class="cta-button">Перейти на запись</a>
+            </div>
 
               
             <div>
