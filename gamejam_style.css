@@ -103,6 +103,24 @@ h4{
 
 .page-title{
     text-align: center;
+    margin: 4% auto 3%;
+    max-width: 720px;
+    padding: 0 16px;
+}
+
+.main-title{
+    font-family: Pixel;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.subtitle{
+    font-family: Pixel;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    margin: 0;
 }
 
 .slider-container {
@@ -161,6 +179,18 @@ h4{
     .ggf{
     
         width: 90%;
+    }
+
+    .page-title{
+        margin: 6% auto 4%;
+    }
+
+    .main-title{
+        font-size: 60px;
+    }
+
+    .subtitle{
+        font-size: 28px;
     }
 
     .colortext01{
@@ -231,6 +261,18 @@ h4{
         margin: auto;
         
     }
+
+    .page-title{
+        margin: 10% auto 6%;
+    }
+
+    .main-title{
+        font-size: 42px;
+    }
+
+    .subtitle{
+        font-size: 24px;
+    }
     .firestyle{
         width: 120px;
         height: 190px;
@@ -279,6 +321,18 @@ h4{
         margin: auto;
         
     }
+
+    .page-title{
+        margin: 12% auto 8%;
+    }
+
+    .main-title{
+        font-size: 36px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
     .firestyle{
         width: 120px;
         height: 190px;
@@ -297,5 +351,4 @@ h4{
         margin-left: 90%;
     }
 }
-
 
